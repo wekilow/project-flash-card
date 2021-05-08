@@ -1,17 +1,7 @@
 import React from "react";
 
 function DeckForm({ handleChange, deck }) {
-    /*
-    The differences in displaying the form is in regards to the data given to it.
-    If given deck data one knows that there is data to edit.
-    If not then one knows that a deck is to be created.
-    Because of this boolean conditional, logic can be created to set function pointers and paths
-    to provide correct functionality.
-    Example:
-        (deck) ? button.text = 'edit' : 'create';
-        (deck) ? path = 'api/edit' : 'api/create';
-        fetch(path).then(...);
-    */
+
     return (
         <div className="form-group">
                     <div className="row">
