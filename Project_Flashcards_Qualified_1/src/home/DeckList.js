@@ -12,7 +12,7 @@ function DeckList() {
         listDecks(abortController.signal).then(setDecks);
 
         return () => abortController.abort();
-    }, [decks]);
+    }, []);
 
     const handleDelete = async (deckId) => {
         const confirmDelete = window.confirm("Delete this deck?\nYou will not be able to recover it.");
